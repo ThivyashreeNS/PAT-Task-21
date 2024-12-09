@@ -63,25 +63,25 @@ PAT Task 21/
 This script contains the main logic for the Selenium WebDriver automation:
 
 - __Data class:__ This class Stores the URL, username, and password.
-- 
+
 - __Locators class:__ This class contains the identifiers for various elements like username, password, login button, and logout button.
-- 
+
 - __WebAutomation class:__ Handles the browser automation, including login, logout, and cookie management functionalities.
 
 ### Methods in `WebAutomation` class:
 - `login()`: Logs in to the website using the stored username and password.
-- 
+
 - `get_cookies()`: Retrieves and returns the cookies from the current session.
-- 
+  
 - `logout()`: Logs out of the website by interacting with the menu and logout button.
-- 
+  
 - `close_browser()`: Closes the browser after the operations.
 
 ### test_CookieAutomation.py
 This script uses `pytest` to perform tests on the automation script:
 
 - __test_cookies_before_login():__ Verifies that no cookies are set before logging in.
-- 
+  
 - __test_cookies_after_login():__ Verifies that cookies are set after logging in.
 
 ## Working of Test Cases
