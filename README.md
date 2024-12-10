@@ -10,6 +10,7 @@ This project automates the process of logging into the SauceDemo website using S
 - [Project Structure](#project-structure)
 - [Code Explanation](#Code-Explanation)
 - [Working of Test Cases](#Working-of-Test-Cases)
+- [Running the test](#Running-the-test)
 
 ## Prerequisites
 - Python 3.x
@@ -91,6 +92,17 @@ This script uses `pytest` to perform tests on the automation script:
 -__test_cookies_after_login:__ This test performs the login operation using the `login()` method and then checks if cookies are set. After that, it asserts that there is at least one cookie after logging in.
 
 -__Logout and Close:__ After the tests, the `logout()` method is called to log out from the website, and the `close_browser()` method is used to close the browser.
+
+## Running the test:
+- This script uses `pytest` to perform tests on the automation script:
+
+  - Make sure the project and dependencies are properly set up.
+
+  - Run the following command to execute the test cases:
+ 
+  ```
+  pytest -v -s --capture=sys --html=Reports\cookie.html test_CookieAutomation.py 
+  ```
 
 
 
